@@ -17,6 +17,14 @@ var str = "Hello, playground"
 
 class Solution {
     func myAtoi(_ str: String) -> Int {
+        var string = str
         return 0
+        
+        func discardsBeginningWhitespace(){
+            
+            while string[string.startIndex] != Character(" ") {
+                string.remove(at: string.startIndex)
+            }
+        }
     }
 }
